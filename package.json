@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ghpages": "ng build --prod --output-path docs --base-href /about/"
+    "ghpages": "NODE_OPTIONS=--openssl-legacy-provider ng build --prod --output-path docs --base-href /about-legacy/"
   },
   "private": true,
   "dependencies": {
